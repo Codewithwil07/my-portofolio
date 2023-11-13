@@ -31,7 +31,7 @@ export default {
                 aboutLg: '700px 100px',
             },
             gridTemplateRows: {
-                skillSm: '60rem 50rem 65rem 15rem',
+                skillSm: '60rem 50rem 69rem 15rem',
                 skillMd: '35rem 35rem 35rem 20rem',
                 projectSm: '10rem 28rem',
             },
