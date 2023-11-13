@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&family=Roboto&family=VT323&display=swap'); */
+
+@font-face {
+    font-family: 'figtree';
+    src: url(./assets/Font/Figtree-Regular.ttf) format('truetype');
+}
+.font-figtree {
+    font-family: 'figtree';
+}
+
+
+/* Theme */
+body[data-theme='dark'] {
+    background-color: #161625;
+    color: white;
+    border-color: black;
+}
+body[data-theme='dark'] #skill-header {
+    color: white;
+}
+body[data-theme='dark'] div#header,
+div#wrap-img-card,
+span#Toggle {
+    color: white;
+    border-color: white;
+}
+body[data-theme='light'] div#wrap-img-card {
+    border-color: black;
+}
+
+/* Hamburger menu */
+div#menu-toggle input:checked ~ span#elementToggle:nth-child(2) {
+    transform: rotate(-45deg) translate(-13px, 6px);
+    transform-origin: 5% 0;
+}
+
+div#menu-toggle input:checked ~ span#elementToggle:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+div#menu-toggle input:checked ~ span#elementToggle:last-child {
+    transform: rotate(45deg) translate(-10px, -3px);
+    transform-origin: 45% 0;
+}
+span#elementToggle {
+    transition: 0.5s all;
+}
+body[data-theme='dark'] div#menu-toggle span#elementToggle {
+    background-color: white;
+}
+
+/* Text Animate */
+p#textAnimation {
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
