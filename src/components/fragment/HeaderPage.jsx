@@ -39,7 +39,7 @@ const ProjectsHeader = () => {
                 Projects <span className='text-4xl'>.</span>
             </h1>
             <svg
-                className='relative right-12 top-1'
+                className='relative top-1'
                 width='100'
                 viewBox='0 0 117 116'
                 fill='none'
