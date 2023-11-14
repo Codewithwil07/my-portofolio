@@ -34,11 +34,12 @@ const AboutHeader = () => {
 
 const ProjectsHeader = () => {
     return (
-        <div className='flex items-end justify-center gap-x-3 md:relative md:top-12'>
+        <div className='flex items-end justify-center md:relative md:top-12'>
             <h1 className='text-5xl font-extrabold text-start md:text-7xl'>
                 Projects <span className='text-7xl'>.</span>
             </h1>
             <svg
+                className='relative right-11'
                 width='150'
                 height='149'
                 viewBox='0 0 117 116'
