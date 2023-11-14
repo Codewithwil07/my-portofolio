@@ -19,9 +19,9 @@ const project = [
 const Project = () => {
     return (
         <MainLayout>
-            <section className='grid grid-rows-projectSm gap-y-5'>
+        <section className='grid grid-rows-projectSm gap-y-5 md:grid-rows-projectMd'>
                 <HeaderPage.ProjectsHeader />
-                <div className='bg-fourth p-3'>
+                <div className='bg-fifth px-5 py-20'>
                     <div className='grid gap-y-16 md:grid-cols-3 md:gap-x-10 mt-5 md:mt-10'>
                         {project.map((items) => (
                             <div className='flex flex-col'>

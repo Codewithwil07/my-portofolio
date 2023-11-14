@@ -23,8 +23,10 @@ import Typ from '../assets/IMG/TypeScript.svg';
 import SCSS from '../assets/IMG/Sass.svg';
 import Tiktok from '../assets/IMG/tik-tok.png';
 import Nextjs from '../assets/IMG/Next.svg';
+import Wa from '../assets/IMG/Wa.svg';
 
 const Images = {
+    Wa,
     Nextjs,
     Tiktok,
     Typ,

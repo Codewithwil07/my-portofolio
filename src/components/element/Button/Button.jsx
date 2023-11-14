@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unreachable */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
@@ -121,7 +122,7 @@ const Ractangle = () => {
 const Normal = ({ children, variant, color, position }) => {
     return (
         <button
-            className={`bg-blue-700 py-2 px-12 text-xl self-center font-bold shadow-md text-${color} cursor-pointer ${variant}`}
+            className={`bg-blue-600 py-2 px-12 text-xl self-${position} font-bold shadow-md text-${color} cursor-pointer ${variant}`}
         >
             {children}
         </button>
@@ -170,8 +171,34 @@ const RoundedV3 = () => {
     );
 };
 
+const Normalv2 = () => {
+    return (
+        <div className='flex flex-col gap-y-10'>
+            <div
+                className={`bg-blue-800 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+            >
+                <img src={image.Ig} alt='image' className='w-12' />
+                Instagram
+            </div>
+            <div
+                className={`bg-green-600 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+            >
+                <img src={image.Tiktok} alt='image' className='w-12' />
+                Tiktok
+            </div>
+            <div
+                className={`bg-rose-700 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+            >
+                <img src={image.Wa} alt='image' className='w-12' />
+                Whatsapp
+            </div>
+        </div>
+    );
+};
+
 Button.Rounded = Rounded;
 Button.Ractangle = Ractangle;
 Button.Normal = Normal;
+Button.Normalv2 = Normalv2;
 Button.RoundedV2 = RoundedV2;
 Button.RoundedV3 = RoundedV3;

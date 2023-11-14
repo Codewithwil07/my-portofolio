@@ -1,3 +1,4 @@
+/* eslint-disable no-dupe-keys */
 /** @type {import('tailwindcss').Config} */
 export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -7,13 +8,12 @@ export default {
                 yeh: '0 100px',
             },
             colors: {
-
                 primary: '#99e2b4',
                 secondary: '#88d4ab',
                 third: '#78c6a3',
                 fifth: '#67b99a',
-                fourth: '#dde6ed',
-
+                fourth: '#99b1af',
+                fifth: '#e5e5e5',
             },
             boxShadow: {
                 primary: '0 0 10px 1px rgba(0, 0, 0, 0.2)',
@@ -31,13 +31,17 @@ export default {
                 aboutLg: '700px 100px',
             },
             gridTemplateRows: {
-                skillSm: '60rem 50rem 69rem 15rem',
-                skillMd: '35rem 35rem 39rem 20rem',
-                projectSm: '10rem 28rem',
+                aboutSm: '55rem 55rem 55rem 28rem',
+                aboutMd: '35rem 35rem 35rem 25rem',
+                projectSm: '10rem 30rem',
+                projectMd: '10rem 30rem',
+                contactSm: '10rem 79rem',
+                contacttMd: '10rem 48rem',
+
             },
-            fontFamily: {
-                Poppins: '',
-            },
+            // fontFamily: {
+            //     Poppins: '',
+            // },
         },
     },
     plugins: [],

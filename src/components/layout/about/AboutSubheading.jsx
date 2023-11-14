@@ -3,7 +3,7 @@ import Button from '../../element/Button/Button';
 
 const AboutSubheading = () => {
     return (
-        <div className='flex flex-col  md:flex md:flex-row md:items-center'>
+        <div className='flex flex-col md:flex md:flex-row md:items-center'>
             <div className='w-[90%] md:w-[69%] text-2xl md:text-xl'>
                 <h1 className='font-bold text-2xl md:text-xl'>
                     My Development stack is focused on performance &

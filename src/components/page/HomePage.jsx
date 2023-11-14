@@ -4,7 +4,7 @@ import MainLayout from '../fragment/MainLayout';
 import Hero from '../layout/home/Hero';
 import Aboutme from '../layout/home/Aboutme';
 import Projects from '../layout/home/Projects';
-import Contact from '../layout/home/Contact';
+import Contact from '../layout/home/Contactme';
 
 export default function Home() {
     return (

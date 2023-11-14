@@ -3,10 +3,10 @@ import image from '../../../constant/image';
 import HeaderPage from '../../fragment/HeaderPage';
 const AboutDetail = () => {
     return (
-        <div className='flex flex-col gap-y-5 relative'>
+        <div className='flex flex-col gap-y-5 relative py-20'>
             <HeaderPage.AboutHeader />
-            <div className='flex flex-col md:flex md:flex-row bg-fourth'>
-                <div className='px-3 py-10 flex flex-col'>
+            <div className='flex flex-col md:flex md:flex-row bg-fifth'>
+                <div className='px-3 flex flex-col'>
                     <strong className='text-3xl font-extrabold pb-5'>
                         Hello,
                     </strong>

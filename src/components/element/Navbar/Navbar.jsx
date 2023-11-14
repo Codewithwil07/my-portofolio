@@ -38,12 +38,12 @@ export default function Navbar() {
                     >
                         Project
                     </Link>
-                    <a
-                        href=''
+                    <Link
+                        to={'/contact'}
                         className='px-2 rounded-sm bg-transparent'
                     >
                         Contact
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
