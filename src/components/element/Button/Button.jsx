@@ -187,7 +187,7 @@ const Normalv2 = () => {
                     Instagram
                 </div>
             </Link>
-            <Link to={'https://www.tiktok.com/@undergroundcoders?_t=8hNMV67l2bC&_r=1'}>
+            <Link to={''}>
                 <div
                     className={`bg-green-600 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
                 >
