@@ -4,7 +4,7 @@ import { image } from '../../constant';
 
 const Footer = () => {
     return (
-        <div className='py-5 bg-fourth leading-8 pt-10'>
+        <div className='py-5 bg-fifth leading-8 pt-10'>
             <div className='flex justify-center items-center gap-x-2'>
                 <p className='font-extrabold text-black text-sm'>MADE WITH</p>
                 <div className='flex gap-x-1'>

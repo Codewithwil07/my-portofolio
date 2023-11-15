@@ -6,6 +6,7 @@
 import { image } from '../../../constant';
 import '../../../index.css';
 import Text from '../../../constant/textDecoration/Text';
+import { Link } from 'react-router-dom';
 
 export default function Button({ children }) {
     return <>{children}</>;
@@ -23,7 +24,7 @@ const Rounded = () => {
                     <img
                         src={image.github}
                         alt=''
-                        className='w-32 h-32 p-10  bg-fourth rounded-full'
+                        className='w-32 h-32 p-10  bg-primary rounded-full'
                     />
                     <Text.Github />
                 </a>
@@ -35,7 +36,7 @@ const Rounded = () => {
                     <img
                         src={image.Tiktok}
                         alt=''
-                        className='w-32 h-32 p-10  bg-fourth  rounded-full'
+                        className='w-32 h-32 p-10  bg-secondary  rounded-full'
                     />
                     <Text.Gmail />
                 </a>
@@ -61,7 +62,7 @@ const Rounded = () => {
                     <img
                         src={image.Linkedin}
                         alt=''
-                        className='w-32 h-32 p-10 bg-primary rounded-full'
+                        className='w-32 h-32 p-10 bg-fourth rounded-full'
                     />
                     <Text.Linkedin />
                 </a>
@@ -174,24 +175,34 @@ const RoundedV3 = () => {
 const Normalv2 = () => {
     return (
         <div className='flex flex-col gap-y-10'>
-            <div
-                className={`bg-blue-800 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+            <Link
+                to={
+                    'https://instagram.com/willjuliansyah?igshid=MTJzeTN1ODEzY2tyNA=='
+                }
             >
-                <img src={image.Ig} alt='image' className='w-12' />
-                Instagram
-            </div>
-            <div
-                className={`bg-green-600 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
-            >
-                <img src={image.Tiktok} alt='image' className='w-12' />
-                Tiktok
-            </div>
-            <div
-                className={`bg-rose-700 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
-            >
-                <img src={image.Wa} alt='image' className='w-12' />
-                Whatsapp
-            </div>
+                <div
+                    className={`bg-blue-800 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+                >
+                    <img src={image.Ig} alt='image' className='w-12' />
+                    Instagram
+                </div>
+            </Link>
+            <Link to={'https://www.tiktok.com/@undergroundcoders?_t=8hNMV67l2bC&_r=1'}>
+                <div
+                    className={`bg-green-600 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+                >
+                    <img src={image.Tiktok} alt='image' className='w-12' />
+                    Tiktok
+                </div>
+            </Link>
+            <Link to={'https://wa.me/62881036249934'}>
+                <div
+                    className={`bg-rose-700 py-2 px-3 text-xl self-start rounded-lg w-full shadow-md cursor-pointer text-white flex items-center gap-x-5`}
+                >
+                    <img src={image.Wa} alt='image' className='w-12' />
+                    Whatsapp
+                </div>
+            </Link>
         </div>
     );
 };

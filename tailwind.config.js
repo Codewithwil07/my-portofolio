@@ -11,9 +11,9 @@ export default {
                 primary: '#99e2b4',
                 secondary: '#88d4ab',
                 third: '#78c6a3',
-                fifth: '#67b99a',
-                fourth: '#d8d8d8',
-                fifth: '#f0f0f0',
+                fourth: '#67b99a',
+                fifth: '#d8d8d8',
+                sixth: '#f0f0f0',
             },
             boxShadow: {
                 primary: '0 0 10px 1px rgba(0, 0, 0, 0.2)',
