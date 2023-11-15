@@ -72,7 +72,7 @@ const Rounded = () => {
 
 const Ractangle = () => {
     return (
-        <div className='flex flex-col w-full relative right-[13%] md:right-[230%] lg:right-[220%] '>
+        <div className='relative  right-20 md:right-10 xl:left-20'>
             <a
                 href=''
                 className='animate-pulse bg-sky-900 px-2 py-2 rounded-lg mt-10 ml-[24rem] w-20 h-20 flex justify-center lg:w-28 lg:h-28 md:ml-[25rem] lg:ml-[32rem]'

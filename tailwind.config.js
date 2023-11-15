@@ -12,8 +12,8 @@ export default {
                 secondary: '#88d4ab',
                 third: '#78c6a3',
                 fifth: '#67b99a',
-                fourth: '#99b1af',
-                fifth: '#e5e5e5',
+                fourth: '#d8d8d8',
+                fifth: '#f0f0f0',
             },
             boxShadow: {
                 primary: '0 0 10px 1px rgba(0, 0, 0, 0.2)',
@@ -27,17 +27,17 @@ export default {
                 DoubleExtraBold: '1000',
             },
             gridTemplateColumns: {
-                aboutMd: '500px 100px',
-                aboutLg: '700px 100px',
+                aboutMd: '28rem 10rem',
+                aboutLg: '39rem 10rem',
             },
             gridTemplateRows: {
-                aboutSm: '55rem 55rem 55rem 28rem',
-                aboutMd: '35rem 35rem 35rem 25rem',
+                aboutSm: '55rem 55rem 93rem',
+                aboutMd: '35rem 45rem 60rem',
+                aboutXl: '35rem 35rem 25rem 25rem',
                 projectSm: '10rem 30rem',
                 projectMd: '10rem 30rem',
                 contactSm: '10rem 79rem',
                 contacttMd: '10rem 48rem',
-
             },
             // fontFamily: {
             //     Poppins: '',

@@ -14,7 +14,7 @@ export default function Hero() {
                 <img
                     src={image.Coretan}
                     alt=''
-                    className='w-60 relative -left-6'
+                    className='w-60'
                 />
             </div>
             <p className='text-md md:text-base' id='darkModeTheme'>Specified In</p>

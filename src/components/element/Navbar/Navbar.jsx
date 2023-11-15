@@ -9,20 +9,30 @@ export default function Navbar() {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     function handleClik() {
-        setMenuOpen(!isMenuOpen)   
+        setMenuOpen(!isMenuOpen);
     }
 
     return (
-        <div className='flex'>
+        <div className='flex justify-between items-center w-full'>
+            <Link to={'/'} className='flex flex-col w-[11rem]'>
+                <p
+                    className='font-extrabold text-start text-md md:text-xl cursor-pointer'
+                    id='darkModeTheme'
+                >
+                    Willy Syahputra
+                </p>
+                <p className='text-gray-400 text-ssm font-light md:text-sm'>
+                    Frontend Developer
+                </p>
+            </Link>
             <ToggleMenu onClick={handleClik} />
             <div
                 className={`${
                     isMenuOpen ? 'block' : 'hidden'
-                } flex flex-col items-start pt-28 gap-x-10 px-2 py-2 backdrop-blur-2xl h-screen text-2xl z-[1] gap-y-3 absolute left-0 top-0 w-full text-gray-400 rounded-md md:text-base lg:gap-x-[390px] lg:static lg:h-auto lg:flex lg:flex-row-reverse lg:items-center lg:pt-0 lg:text-black`}
+                } flex flex-col items-start pt-28 gap-x-10 px-2 py-2 backdrop-blur-2xl h-screen text-2xl z-[1] gap-y-3 absolute left-0 top-0 w-full text-gray-400 rounded-md md:text-base lg:static lg:h-auto lg:flex lg:items-center lg:pt-0 lg:text-black`}
             >
-                <DarkLightMode />
                 <div
-                    className='flex flex-col gap-y-10 lg:flex md:text-base lg:flex-row lg:gap-x-1 lg:text-md'
+                    className='flex flex-col gap-y-10 lg:flex md:text-base lg:flex-row lg:gap-x-10 lg:text-md'
                     id='header'
                 >
                     <Link
@@ -46,6 +56,7 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
+            <DarkLightMode hidden={`${isMenuOpen ? 'block' : 'hidden'} lg:block`} />
         </div>
     );
 }

@@ -25,9 +25,10 @@ const Project = () => {
                     <div className='grid gap-y-16 md:grid-cols-3 md:gap-x-10 mt-5 md:mt-10'>
                         {project.map((items) => (
                             <div className='flex flex-col'>
-                                <Card.Header img={image.Project1} />
+                                <Card.Header img={image.Project1} color={'black'}/>
                                 <Card.Body
                                     title={items.name}
+                                    color={'black'}
                                     description={items.description}
                                 />
                                 <div className='flex gap-x-2'>

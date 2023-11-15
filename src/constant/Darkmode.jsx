@@ -2,7 +2,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import '../index.css';
 import { useState } from 'react';
 
-const DarkLightMode = () => {
+const DarkLightMode = ({ hidden }) => {
     const [isModeOpen, setModeOpen] = useState(false);
 
     const setDarkmode = () => {
@@ -19,7 +19,7 @@ const DarkLightMode = () => {
     if (selectedTheme === 'dark') setDarkmode();
 
     return (
-        <div className='z-20 absolute left-5 top-5 text-yellow-300 lg:static'>
+        <div className={`z-20 absolute left-5 top-5 text-yellow-300 lg:static ${hidden}`}>
             {isModeOpen ? (
                 <BsFillMoonStarsFill
                     onClick={() => setModeOpen(!isModeOpen)}

@@ -10,7 +10,7 @@ export default HeaderPage;
 const AboutHeader = () => {
     return (
         <div className='flex items-end justify-center gap-x-3 md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-7xl'>
+            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
                 About <span className='text-4xl'>.</span>
             </h1>
             <svg
@@ -35,7 +35,7 @@ const AboutHeader = () => {
 const ProjectsHeader = () => {
     return (
         <div className='flex items-end justify-center gap-x-3 pl-16  md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-7xl'>
+            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
                 Projects <span className='text-4xl'>.</span>
             </h1>
             <svg
@@ -79,7 +79,7 @@ const ProjectsHeader = () => {
 const ContactHeader = () => {
     return (
         <div className='flex items-end justify-center gap-x-3 md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-7xl'>
+            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
                 Contact <span className='text-4xl'>.</span>
             </h1>
             <svg

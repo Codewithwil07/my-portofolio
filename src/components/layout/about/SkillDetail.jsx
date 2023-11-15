@@ -4,7 +4,7 @@ import { image } from '../../../constant';
 
 const SkillDetail = () => {
     return (
-        <div className='container'>
+        <div className='py-20'>
             <Button.RoundedV3 />
             <div className='grid grid-cols-2 gap-x-10 gap-y-5 py-16 md:grid-cols-3 xl:grid-cols-4'>
                 <div>

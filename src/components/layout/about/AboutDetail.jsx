@@ -5,9 +5,9 @@ const AboutDetail = () => {
     return (
         <div className='flex flex-col gap-y-5 relative py-20'>
             <HeaderPage.AboutHeader />
-            <div className='flex flex-col md:flex md:flex-row bg-fifth'>
+            <div className='flex flex-col md:flex md:flex-row bg-fifth pt-20'>
                 <div className='px-3 flex flex-col'>
-                    <strong className='text-3xl font-extrabold pb-5'>
+                    <strong className='text-3xl font-extrabold pb-5 text-black'>
                         Hello,
                     </strong>
                     <p className='text-start text-gray-500 text-sm pb-20 md:text-base'>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Aboutme = () => {
     return (
         <section className='container py-20'>
-            <div className='grid items-center md:grid md:grid-cols-aboutMd lg:grid-cols-aboutLg'>
+            <div className='grid items-center md:grid-cols-2 lg:grid-cols-2'>
                 <div className='flex flex-col gap-y-5'>
                     <h1
                         className='font-extrabold text-3xl md:text-3xl lg:text-4xl'
