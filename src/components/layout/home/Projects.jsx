@@ -23,17 +23,17 @@ const Projects = () => {
 
     React.useEffect(() => {
         if (inView) {
-            control.start({ opacity: 1, x: 0 });
+            control.start({ opacity: 1 });
         }
     }, [control, inView]);
     return (
         <section className='mx-auto py-20 flex flex-col gap-y-10'>
             <div className='flex flex-col items-center gap-y-5'>
                 <motion.svg
-                    ref={ref}
-                    initial={{ opacity: 0, left: 2 }}
-                    animate={control}
-                    transition={{ duration: 1 }}
+                    // ref={ref}
+                    // animate={control}
+                    // initial={{ opacity: 0 }}
+                    // transition={{ duration: 3 }}
                     xmlns='http://www.w3.org/2000/svg'
                     width='300'
                     height='108'
@@ -56,7 +56,13 @@ const Projects = () => {
             </div>
             <div className='grid gap-y-16 md:grid-cols-3 md:gap-x-10'>
                 {project.map((items) => (
-                    <div className='flex flex-col'>
+                    <motion.div
+                        className='flex flex-col'
+                        ref={ref}
+                        animate={control}
+                        initial={{ opacity: 0 }}
+                        transition={{ duration: 2 }}
+                    >
                         <Card.Header img={image.Project1} />
                         <Card.Body
                             title={items.name}
@@ -69,7 +75,7 @@ const Projects = () => {
                                 </p>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
             <Link className='self-center' to={'/project'}>
