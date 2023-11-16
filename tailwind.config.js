@@ -36,7 +36,7 @@ export default {
                 aboutXl: '35rem 35rem 25rem 25rem',
                 projectSm: '10rem 30rem',
                 projectMd: '10rem 30rem',
-                contactSm: '10rem 79rem',
+                contactSm: '10rem 81rem',
                 contacttMd: '10rem 48rem',
             },
             // fontFamily: {
