@@ -59,9 +59,9 @@ const Projects = () => {
                     <motion.div
                         className='flex flex-col'
                         ref={ref}
-                        animate={control}
                         initial={{ opacity: 0 }}
-                        transition={{ duration: 2 }}
+                        animate={control}
+                        transition={{ duration: 1.5, delay: 1.5 }}
                     >
                         <Card.Header img={image.Project1} />
                         <Card.Body

@@ -6,7 +6,7 @@ import './index.css';
 import HomePage from './components/page/HomePage.jsx';
 import AboutPage from './components/page/AboutPage.jsx';
 import ProjectPage from './components/page/ProjectPage.jsx';
-import ContactPage from './components/page/ContactPage'
+import ContactPage from './components/page/ContactPage';
 import Inkultur from './components/layout/project/Inkultur';
 import ToggleMenu from './components/element/Navbar/ToggleMenu.jsx';
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/contact',
-        element: <ContactPage/>,
+        element: <ContactPage />,
     },
     {
         path: '/inkultur',

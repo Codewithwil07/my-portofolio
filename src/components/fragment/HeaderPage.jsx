@@ -1,18 +1,37 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { motion } from 'framer-motion';
+
 const HeaderPage = ({ children }) => {
     return <>{children}</>;
 };
-
 export default HeaderPage;
 
 const AboutHeader = () => {
     return (
-        <div className='flex items-end justify-center gap-x-3 md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
-                About <span className='text-4xl'>.</span>
-            </h1>
+        <div className='flex items-end justify-center gap-4 md:relative md:top-12'>
+            <div className='flex'>
+                <motion.h1
+                    className='text-5xl font-extrabold text-start md:text-6xl'
+                    initial={{ y: -100 }}
+                    animate={{ y: 0 }}
+                    transition={{ delay: 0.2, type: 'spring', duration: 1 }}
+                >
+                    Abou
+                </motion.h1>
+                <motion.h1
+                    className='text-5xl font-extrabold md:text-6xl relative left-1'
+                    initial={{ rotate: '90deg', x: -4 }}
+                    animate={{ rotate: '0deg', y: 0 }}
+                    transition={{ delay: 0.5, type: 'spring', duration: 0.5 }}
+                >
+                    t
+                </motion.h1>
+                <div className='text-5xl font-extrabold md:text-6xl relative left-0.3'>
+                    .
+                </div>
+            </div>
             <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='150'
@@ -34,10 +53,41 @@ const AboutHeader = () => {
 
 const ProjectsHeader = () => {
     return (
-        <div className='flex items-end justify-center gap-x-3 pl-16  md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
-                Projects <span className='text-4xl'>.</span>
-            </h1>
+        <div className='flex items-end justify-center md:relative md:top-12  '>
+            <div className='flex'>
+                <motion.h1
+                    className='text-5xl font-extrabold text-start md:text-6xl'
+                    initial={{ x: -100 }}
+                    animate={{ x: 0 }}
+                    transition={{ type: 'spring' }}
+                >
+                    Projec
+                </motion.h1>
+                <motion.span
+                    className='text-5xl font-extrabold md:text-6xl'
+                    transition={{ duration: 0.5 }}
+                    initial={{ x: 100 }}
+                    animate={{ x: 0 }}
+                >
+                    t
+                </motion.span>
+                <motion.span
+                    className='text-5xl font-extrabold md:text-6xl'
+                    transition={{ duration: 0.5 }}
+                    initial={{ x: -100 }}
+                    animate={{ x: 0 }}
+                >
+                    s
+                </motion.span>
+                <motion.span
+                    className='text-5xl font-extrabold md:text-6xl'
+                    transition={{ delay: 0.5, type: 'spring' }}
+                    initial={{ y: -300 }}
+                    animate={{ y: 0 }}
+                >
+                    .
+                </motion.span>
+            </div>
             <svg
                 className='relative top-1'
                 width='100'
@@ -78,11 +128,28 @@ const ProjectsHeader = () => {
 
 const ContactHeader = () => {
     return (
-        <div className='flex items-end justify-center gap-x-3 md:relative md:top-12'>
-            <h1 className='text-4xl font-extrabold text-start md:text-6xl'>
-                Contact <span className='text-4xl'>.</span>
-            </h1>
+        <div className='flex items-end justify-center pl-7 md:relative md:top-12'>
+            <div className='flex'>
+                <motion.h1
+                    className='text-5xl font-extrabold text-start md:text-6xl'
+                    initial={{ y: -300 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeInOut', type:'spring' }}
+                >
+                    C <span className='pl-3.5 md:pl-4'></span>ntact{' '}
+                    <span className='text-5xl relative right-3'>.</span>
+                </motion.h1>
+                <motion.h1
+                    className='text-5xl font-extrabold text-start relative right-[10.1rem] md:text-6xl md:right-[12.4rem]'
+                    initial={{ y: -300 }}
+                    animate={{ y: 0 }}
+                    transition={{ delay: 1, type: 'spring' }}
+                >
+                    o
+                </motion.h1>
+            </div>
             <svg
+                className='relative right-7'
                 xmlns='http://www.w3.org/2000/svg'
                 width='96'
                 height='59'

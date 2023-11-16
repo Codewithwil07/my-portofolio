@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../../../constant/image';
 import HeaderPage from '../../fragment/HeaderPage';
+
 const AboutDetail = () => {
     return (
         <div className='flex flex-col gap-y-5 relative py-20'>

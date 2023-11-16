@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-undef */
 import React, { useState } from 'react';
 import Button from '../../element/Button/Button';
@@ -31,7 +32,7 @@ const GmailComponenet = () => {
 
     return (
         <div className='flex flex-col gap-y-5 gap-x-10 md:w-full md:flex md:flex-row md:items-center md:justify-start'>
-            <form className='md:w-[50%]' ref={form} onSubmit={sendEmail}>
+            <form className='md:w-[50%] flex flex-col gap-y-5' ref={form} onSubmit={sendEmail}>
                 <div className='flex flex-col gap-y-2'>
                     <label for='name'>Name</label>
                     <input
