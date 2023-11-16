@@ -21,7 +21,7 @@ export default function Navbar() {
                 >
                     Willy Syahputra
                 </p>
-                <p className='text-gray-400 text-ssm font-light md:text-sm'>
+                <p className='text-gray-400 text-sm font-light md:text-sm'>
                     Frontend Developer
                 </p>
             </Link>

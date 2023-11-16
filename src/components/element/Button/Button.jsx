@@ -123,7 +123,7 @@ const Ractangle = () => {
 const Normal = ({ children, variant, color, position }) => {
     return (
         <button
-            className={`bg-blue-600 py-2 px-12 text-xl self-${position} font-bold shadow-md text-${color} cursor-pointer ${variant}`}
+            className={`bg-blue-600 py-2 px-12 text-xl self-${position} font-bold shadow-md text-${color} cursor-pointer ${variant} border-1 border-blue-600`}
         >
             {children}
         </button>

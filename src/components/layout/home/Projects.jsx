@@ -30,10 +30,6 @@ const Projects = () => {
         <section className='mx-auto py-20 flex flex-col gap-y-10'>
             <div className='flex flex-col items-center gap-y-5'>
                 <motion.svg
-                    // ref={ref}
-                    // animate={control}
-                    // initial={{ opacity: 0 }}
-                    // transition={{ duration: 3 }}
                     xmlns='http://www.w3.org/2000/svg'
                     width='300'
                     height='108'
@@ -80,7 +76,7 @@ const Projects = () => {
             </div>
             <Link className='self-center' to={'/project'}>
                 <Button.Normal
-                    variant='bg-white rounded-[100px] border-[1px] border-black'
+                    variant='bg-white rounded-[100px] border-[1px]'
                     color={'black'}
                 >
                     View all

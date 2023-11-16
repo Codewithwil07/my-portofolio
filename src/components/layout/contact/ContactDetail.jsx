@@ -9,7 +9,7 @@ const ContactDetail = () => {
                     Lets talk about your projects.
                 </h1>
                 <p className='text-xl md:text-base text-gray-800'>
-                    fill the form an d send in your queries, i can respond as
+                    fill the form and send in your queries, i can respond as
                     soon as i can. alternatively, you can reach out to at my
                     email addres.
                 </p>
