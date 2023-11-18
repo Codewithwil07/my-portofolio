@@ -6,8 +6,8 @@ const AboutDetail = () => {
     return (
         <div className='flex flex-col gap-y-5 relative py-20'>
             <HeaderPage.AboutHeader />
-            <div className='flex flex-col md:flex md:flex-row pt-20 px-5' id='aboutDetail'>
-                <div className='px-3 flex flex-col pt-10'>
+            <div className='flex flex-col md:flex md:flex-row pt-20 px-5' id='card'>
+                <div className='px-3 flex flex-col py-20'>
                     <strong className='text-3xl font-extrabold pb-5 text-black'>
                         Hello,
                     </strong>

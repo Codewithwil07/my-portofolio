@@ -84,7 +84,6 @@ section#bg3 {
 
 /* Card */
 div#card {
-    border-radius: 24px;
     border: 1px solid rgba(2, 132, 199, 0.2);
     background: linear-gradient(
             147deg,
@@ -159,5 +158,4 @@ div#aboutDetail {
         15px 24px 17px 0px rgba(0, 0, 0, 0.01),
         27px 43px 20px 0px rgba(0, 0, 0, 0), 42px 67px 22px 0px rgba(0, 0, 0, 0);
     padding: 1rem;
-    border-radius: 24px;
 }

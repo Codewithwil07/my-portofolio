@@ -38,11 +38,11 @@ const Project = () => {
                 <HeaderPage.ProjectsHeader />
                 <div className='bg-sixth px-5 py-20' id='card'>
                     <div
-                        className='grid gap-y-16 md:grid-cols-3 md:gap-x-10 mt-5 md:mt-10'
+                        className='grid gap-y-16 md:grid-cols-1 xl:grid-cols-3 md:gap-x-10 mt-5 md:mt-10 py-20'
                     >
                         {project.map((items) => (
                             <motion.div
-                                className='flex flex-col gap-y-2 w-[50%rem]'
+                                className='flex flex-col gap-y-2 w-full'
                                 ref={card}
                                 initial={{ y: 200 }}
                                 animate={controlCard}

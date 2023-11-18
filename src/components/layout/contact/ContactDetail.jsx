@@ -3,8 +3,8 @@ import Button from '../../element/Button/Button';
 import GmailComponenet from './GmailComponenet';
 const ContactDetail = () => {
     return (
-        <div className='flex flex-col gap-y-10 bg-sixth py-20 px-5'>
-            <div className='flex flex-col gap-y-10 '>
+        <div className='flex flex-col gap-y-10 py-20 px-5' id='card'>
+            <div className='flex flex-col gap-y-10 py-20'>
                 <h1 className='text-3xl font-bold w-full text-black'>
                     Lets talk about your projects.
                 </h1>
