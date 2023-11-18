@@ -34,9 +34,9 @@ export default {
                 aboutLg: '39rem 10rem',
             },
             gridTemplateRows: {
-                aboutSm: '10rem 1fr 1fr',
-                aboutMd: '1fr 1fr',
-                aboutXl: '1fr 1fr 1fr',
+                aboutSm: '1fr',
+                aboutMd: '1fr',
+                aboutXl: '1fr',
                 projectSm: '10rem 1fr',
                 projectMd: '10rem 1fr',
                 contactSm: '10rem 1fr',

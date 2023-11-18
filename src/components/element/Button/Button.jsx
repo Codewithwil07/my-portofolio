@@ -77,48 +77,92 @@ const Rounded = () => {
 const Ractangle = () => {
     return (
         <div className='relative  right-20 md:right-10 xl:left-20'>
-            <a
+            <motion.a
                 href=''
                 className=' bg-sky-900 px-2 py-2 rounded-lg mt-10 ml-[24rem] w-20 h-20 flex justify-center lg:w-28 lg:h-28 md:ml-[25rem] lg:ml-[32rem]'
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                    duration: 2,
+                    ease: 'easeIn',
+                    repeat: Infinity,
+                }}
             >
                 <img src={image.React} alt='' className='w-14 md:w-32' />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href=''
                 className='bg-black px-2 py-2 rounded-lg -mt-10 ml-[18rem] w-16 h-16 flex justify-center lg:w-20 lg:h-20 md:ml-[19rem] lg:ml-[25rem]'
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: 'linear',
+                    delay: 1,
+                }}
             >
                 <img src={image.Figma} alt='' className='w-7 md:w-10' />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href=''
                 className=' bg-sky-200 px-2 py-2 rounded-lg  mt-5 ml-[15rem] w-28 h-28 flex justify-center lg:w-36 lg:h-36 md:ml-[16rem] lg:ml-[20rem]'
+                initial={{ opacity: 0.7, x: 40 }}
+                animate={{ opacity: 1, x: 20 }}
+                transition={{
+                    duration: 4,
+                    ease: 'easeOut',
+                    repeat: Infinity,
+                    type: 'spring',
+                }}
             >
                 <img src={image.Visual} alt='' className='w-14 md:w-20' />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href=''
                 className=' bg-purple-900 px-2 py-2 rounded-lg  -mt-28 ml-[24rem]  w-14 h-14 flex justify-center lg::w-20 lg::h-20 md:-mt-28 md:ml-[25rem] lg:ml-[32rem]'
+                initial={{ rotate: 0, x: -10 }}
+                animate={{ rotate: -360, x: 50 }}
+                transition={{
+                    duration: 2,
+                    ease: 'easeInOut',
+                    repeat: Infinity,
+                }}
             >
                 <img src={image.Tailwind} alt='' className='w-7 md:w-10' />
-            </a>
-            <div
+            </motion.a>
+            <motion.div
                 href=''
                 className='bg-yellow-500 px-2 py-2 rounded-lg -mt-14 ml-[28.5rem]  w-20 h-20 flex justify-center lg::w-24 lg::h-24 lg:ml-[39rem] md:-mt-20 md:ml-[32rem] lg:-mt-20'
+                initial={{ rotate: 0 }}
+                animate={{ rotate: -180 }}
+                transition={{
+                    duration: 1,
+                    ease: 'linear',
+                    repeat: Infinity,
+                    type: 'spring',
+                }}
             >
                 <img src={image.Html} alt='' className='w-10 md:w-10' />
-            </div>
-            <a
+            </motion.div>
+            <motion.a
                 href=''
                 className=' bg-green-900 px-2 py-2 rounded-lg  mt-10 ml-[21rem] w-14 h-14 flex justify-center lg:w-20 lg:h-20 md:ml-[22rem] lg:ml-[26rem] md:mt-16 lg:mt-16'
+                initial={{ y: 0 }}
+                animate={{ y: 20 }}
+                transition={{ duration: 1, repeat: Infinity }}
             >
                 <img src={image.Mongodb} alt='' className='w-10 md:w-16' />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
                 href=''
                 className=' bg-purple-300 px-2 py-2 rounded-lg  -mt-20 ml-[26rem] w-16 h-16 flex justify-center lg:w-24 lg:h-24 md:ml-[28rem] md:-mt-18 lg:ml-[35rem] lg:-mt-24'
+                initial={{ scale: 1 }}
+                animate={{ scale: 1.2 }}
+                transition={{ duration: 2, repeat: Infinity }}
             >
                 <img src={image.Bootstrap} alt='' className='w-10' />
-            </a>
+            </motion.a>
         </div>
     );
 };

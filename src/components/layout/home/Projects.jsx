@@ -26,6 +26,18 @@ const project = [
             `${image.Express}`,
         ],
     },
+    {
+        title: 'Inkultur',
+        banner: '/src/assets/Project/Project1.png',
+        description:
+            ' is a blog app that discusses all about Programming & ui/ux design',
+        stack: [
+            `${image.React}`,
+            `${image.Mongodb}`,
+            `${image.Node}`,
+            `${image.Express}`,
+        ],
+    },
 ];
 
 const Projects = () => {
@@ -54,7 +66,7 @@ const Projects = () => {
                         initial={{ y: 200 }}
                         animate={controlCard}
                         transition={{ duration: 0.5 }}
-                        id='card'
+                        id='cardProject'
                     >
                         <Card.Header img={image.Project1} />
                         <Card.Body

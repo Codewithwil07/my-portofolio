@@ -103,6 +103,27 @@ div#card {
         27px 43px 20px 0px rgba(0, 0, 0, 0), 42px 67px 22px 0px rgba(0, 0, 0, 0);
     padding: 1rem;
 }
+div#cardProject {
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    background: linear-gradient(
+            147deg,
+            rgba(2, 132, 199, 0.1) 1.32%,
+            rgba(236, 254, 255, 0) 66%
+        ),
+        linear-gradient(
+            326deg,
+            rgba(2, 132, 199, 0.2) 3.68%,
+            rgba(236, 254, 255, 0) 66.89%
+        ),
+        #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.02),
+        2px 3px 7px 0px rgba(0, 0, 0, 0.02),
+        7px 11px 13px 0px rgba(0, 0, 0, 0.02),
+        15px 24px 17px 0px rgba(0, 0, 0, 0.01),
+        27px 43px 20px 0px rgba(0, 0, 0, 0), 42px 67px 22px 0px rgba(0, 0, 0, 0);
+    padding: 1rem;
+    border-radius: 24px;
+}
 /* Card Btn */
 div#cardBtn {
     border-radius: 16px;

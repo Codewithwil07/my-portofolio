@@ -8,10 +8,10 @@ const AboutDetail = () => {
             <HeaderPage.AboutHeader />
             <div className='flex flex-col md:flex md:flex-row pt-20 px-5' id='card'>
                 <div className='px-3 flex flex-col py-20'>
-                    <strong className='text-3xl font-extrabold pb-5 text-black'>
+                    <strong className='text-3xl font-extrabold pb-5 text-black md:text-4xl'>
                         Hello,
                     </strong>
-                    <p className='text-start text-gray-500 text-lg pb-20 md:text-base'>
+                    <p className='text-start text-gray-500 text-lg pb-20 md:text-xl'>
                         My name is Willy Syahputra, you can call me Willy, i
                         focus on learning about web development especially using
                         javascript, with various frameworks such as Next.js and
