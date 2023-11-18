@@ -3,11 +3,11 @@ import { useState } from 'react';
 import DarkLightMode from '../../../constant/Darkmode';
 import ToggleMenu from './ToggleMenu';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
     // eslint-disable-next-line no-unused-vars
     const [isMenuOpen, setMenuOpen] = useState(false);
-
     function handleClik() {
         setMenuOpen(!isMenuOpen);
     }
@@ -15,9 +15,7 @@ export default function Navbar() {
     return (
         <div className='flex justify-between items-center w-full'>
             <Link to={'/'} className='flex flex-col w-[11rem]'>
-                <p
-                    className='font-extrabold text-start text-md md:text-xl cursor-pointer'
-                >
+                <p className='font-extrabold text-start text-md md:text-xl cursor-pointer'>
                     Willy Syahputra
                 </p>
                 <p className='text-sm font-light md:text-sm'>
@@ -55,7 +53,9 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
-            <DarkLightMode hidden={`${isMenuOpen ? 'block' : 'hidden'} lg:block`} />
+            <DarkLightMode
+                hidden={`${isMenuOpen ? 'block' : 'hidden'} lg:block`}
+            />
         </div>
     );
 }

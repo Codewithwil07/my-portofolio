@@ -26,18 +26,6 @@ const project = [
             `${image.Express}`,
         ],
     },
-    {
-        title: 'Inkultur',
-        banner: '/src/assets/Project/Project1.png',
-        description:
-            ' is a blog app that discusses all about Programming & ui/ux design',
-        stack: [
-            `${image.React}`,
-            `${image.Mongodb}`,
-            `${image.Node}`,
-            `${image.Express}`,
-        ],
-    },
 ];
 
 const Projects = () => {
@@ -65,7 +53,7 @@ const Projects = () => {
                         ref={card}
                         initial={{ y: 200 }}
                         animate={controlCard}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.2 }}
                         id='cardProject'
                     >
                         <Card.Header img={image.Project1} />
@@ -74,7 +62,7 @@ const Projects = () => {
                             description={items.description}
                         />
                         <div className='flex flex-col gap-y-3 gap-x-2'>
-                            <p className='font-bold text-lg md:text-2xl'>
+                            <p className='font-bold text-lg md:text-xl'>
                                 Featured technologies used
                             </p>
                             <div className='flex'>

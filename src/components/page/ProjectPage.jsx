@@ -10,10 +10,10 @@ import { useInView } from 'react-intersection-observer';
 
 const project = [
     {
-        name: 'Inkultur',
+        title: 'Inkultur',
         banner: '/src/assets/Project/Project1.png',
         description:
-            ' Inkultur is a blog app that discusses all about Programming & ui/ux design',
+            'is a blog app that discusses all about Programming & ui/ux design',
         stack: [
             `${image.React}`,
             `${image.Mongodb}`,
@@ -29,7 +29,7 @@ const Project = () => {
 
     React.useEffect(() => {
         if (inCard) {
-            controlCard.start({ y: 0 });
+            controlCard.start({ y: 0, transition: { duration: 0.5 } });
         }
     }, [controlCard, inCard]);
     return (
@@ -37,9 +37,7 @@ const Project = () => {
             <section className='grid grid-rows-projectSm gap-y-5 md:grid-rows-projectMd'>
                 <HeaderPage.ProjectsHeader />
                 <div className='bg-sixth px-5 py-20' id='card'>
-                    <div
-                        className='grid gap-y-16 md:grid-cols-2 xl:grid-cols-3 md:gap-x-10 mt-5 md:mt-10  py-20'
-                    >
+                    <div className='grid gap-y-16 md:grid-cols-2 xl:grid-cols-3 md:gap-x-10 mt-5 md:mt-10  py-20'>
                         {project.map((items) => (
                             <motion.div
                                 className='flex flex-col gap-y-2 w-full'
@@ -55,7 +53,7 @@ const Project = () => {
                                     description={items.description}
                                 />
                                 <div className='flex flex-col gap-y-3 gap-x-2'>
-                                    <p className='font-bold text-lg md:text-2xl'>
+                                    <p className='font-bold text-lg md:text-xl'>
                                         Featured technologies used
                                     </p>
                                     <div className='flex'>

@@ -1,10 +1,33 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import image from '../../../constant/image';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Skill = () => {
+    const control = useAnimation();
+    const [item, inView] = useInView();
+
+    React.useEffect(() => {
+        if (inView) {
+            control.start({
+                y: 0,
+                opacity: 1,
+                transition: {
+                    duration: 0.2,
+                },
+            });
+        }
+    }, [control, inView]);
+
+    const init = {
+        y: 100,
+        opacity: 0,
+    };
+
     return (
         <>
-            <div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.Html} className=' w-10 pb-1' alt='Image-Icon' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -17,8 +40,8 @@ const Skill = () => {
                     Hypertext Markup Language is the standard markup language
                     for documents designed to be displayed in internet browsers
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.CSS} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -32,8 +55,8 @@ const Skill = () => {
                     several componenets in a web so that it will be more
                     structured and uniform
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.Js} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -45,8 +68,8 @@ const Skill = () => {
                     <br />
                     Javascript is a high-level end dynamic programming language
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img
                     src={image.Tailwind}
                     alt='Image-Icon'
@@ -64,8 +87,8 @@ const Skill = () => {
                     flex, pt-8, text-center, and rotate-45 than can be composed
                     to build any design, directly in your markup
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.Typ} alt='Image-Icon' className='w-10 pb-2' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -78,8 +101,8 @@ const Skill = () => {
                     Typescript is a strongly typed programming language thats
                     build on Javascript, giving you better tooling at any scale
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.SCSS} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -92,8 +115,8 @@ const Skill = () => {
                     Sass is the most mature, stable, and powerful professional
                     grade CSS extension language in the world
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.React} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -106,8 +129,8 @@ const Skill = () => {
                     React is a javascript library used to build component-based
                     interactive user interfaces
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img src={image.Node} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -120,8 +143,8 @@ const Skill = () => {
                     Node.js is a runtime environment for Javascript that is
                     open-source and cross platform
                 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div ref={item} animate={control} initial={init}>
                 <img
                     src={image.Nextjs}
                     alt='Image-Icon'
@@ -139,7 +162,7 @@ const Skill = () => {
                     building web applications. it allow developers to build
                     modern, server-render React applications with ease
                 </p>
-            </div>
+            </motion.div>
         </>
     );
 };
