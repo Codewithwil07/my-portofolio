@@ -35,12 +35,12 @@ export default {
             },
             gridTemplateRows: {
                 aboutSm: '10rem 1fr 1fr',
-                aboutMd: '1fr 1fr 1fr',
-                aboutXl: '1fr 1fr 1fr 1fr',
+                aboutMd: '1fr 1fr',
+                aboutXl: '1fr 1fr 1fr',
                 projectSm: '10rem 1fr',
                 projectMd: '10rem 1fr',
                 contactSm: '10rem 1fr',
-                contacttMd: '1fr 1fr',
+                contacttMd: '10rem 1fr',
             },
             transformOrigin: {
                 yeh: '0 60px',
