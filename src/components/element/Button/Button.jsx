@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 /* eslint-disable no-undef */
 /* eslint-disable no-unreachable */
 /* eslint-disable no-unused-vars */
@@ -7,7 +8,8 @@ import { image } from '../../../constant';
 import '../../../index.css';
 import Text from '../../../constant/textDecoration/Text';
 import { Link } from 'react-router-dom';
-import { FaLongArrowAltRight } from 'react-icons/fa';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function Button({ children }) {
     return <>{children}</>;
@@ -151,26 +153,185 @@ const RoundedV2 = ({ size }) => {
 };
 
 const RoundedV3 = () => {
+    const controlS = useAnimation();
+    const controlK = useAnimation();
+    const controlI = useAnimation();
+    const controlL = useAnimation();
+    const controlLl = useAnimation();
+    const controlSI = useAnimation();
+
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlS.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 1,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlS.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlS.stop();
+    }, [controlS]);
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlK.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 2,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlK.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlK.stop();
+    }, [controlK]);
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlI.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 1,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlI.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlI.stop();
+    }, [controlI]);
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlL.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 2,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlL.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlL.stop();
+    }, [controlL]);
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlLl.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 3,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlLl.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlLl.stop();
+    }, [controlLl]);
+    useEffect(() => {
+        const svgVariants = async () => {
+            while (true) {
+                await controlSI.start({
+                    scaleX: 1,
+                    scaleY: 1,
+                    transition: {
+                        duration: 1,
+                        ease: 'easeInOut',
+                        type: 'spring',
+                    },
+                });
+                await controlSI.start({
+                    scaleX: 1.1,
+                    scaleY: 1.1,
+                    animationDelay: 11,
+                });
+            }
+        };
+        svgVariants();
+        return () => controlSI.stop();
+    }, [controlSI]);
+
     return (
         <div className='flex gap-x-3 items-end pt-10'>
-            <div className='w-8 md:w-12 h-10 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'>
+            <motion.div
+                className='w-8 md:w-12 h-10 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlS}
+                animate={controlS}
+            >
                 S
-            </div>
-            <div className='w-8 md:w-12 h-28 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'>
+            </motion.div>
+            <motion.div
+                className='w-8 md:w-12 h-28 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlK}
+                animate={controlK}
+            >
                 K
-            </div>
-            <div className='w-8 md:w-12 h-36 rounded-full bg-fourth flex justify-center p-1 font-bold text-xl text-white'>
+            </motion.div>
+            <motion.div
+                className='w-8 md:w-12 h-36 rounded-full bg-fourth flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlI}
+                animate={controlI}
+            >
                 I
-            </div>
-            <div className='w-8 md:w-12 h-20 rounded-full bg-third flex justify-center p-1 font-bold text-xl text-white'>
+            </motion.div>
+            <motion.div
+                className='w-8 md:w-12 h-20 rounded-full bg-third flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlL}
+                animate={controlL}
+            >
                 L
-            </div>
-            <div className='w-8 md:w-12 h-44 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'>
+            </motion.div>
+            <motion.div
+                className='w-8 md:w-12 h-44 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlLl}
+                animate={controlLl}
+            >
                 L
-            </div>
-            <div className='w-8 md:w-12 h-40 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'>
+            </motion.div>
+            <motion.div
+                className='w-8 md:w-12 h-40 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'
+                initial={controlSI}
+                animate={controlSI}
+            >
                 S
-            </div>
+            </motion.div>
         </div>
     );
 };
