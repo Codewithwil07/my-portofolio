@@ -4,16 +4,19 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
-            transformOrigin: {
-                yeh: '0 100px',
+            bg: {
+                primary:
+                    'linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
             },
             colors: {
-                primary: '#99e2b4',
-                secondary: '#88d4ab',
-                third: '#78c6a3',
-                fourth: '#67b99a',
-                fifth: '#d8d8d8',
+                primary: '#333c4a',
+                secondary: '#495664',
+                third: '#f6f7d3',
+                fourth: '#f8fceb',
+                fifth: '#091F2A',
                 sixth: '#f0f0f0',
+                seventh: '#40F4B2',
+                eight: '#F0F9FF',
             },
             boxShadow: {
                 primary: '0 0 10px 1px rgba(0, 0, 0, 0.2)',
@@ -31,17 +34,20 @@ export default {
                 aboutLg: '39rem 10rem',
             },
             gridTemplateRows: {
-                aboutSm: '55rem 55rem 93rem',
+                aboutSm: '60rem 50rem 78rem',
                 aboutMd: '35rem 45rem 60rem',
                 aboutXl: '35rem 35rem 25rem 25rem',
-                projectSm: '10rem 30rem',
-                projectMd: '10rem 30rem',
-                contactSm: '10rem 81rem',
-                contacttMd: '10rem 48rem',
+                projectSm: '10rem 90rem',
+                projectMd: '10rem 90rem',
+                contactSm: '10rem 90rem',
+                contacttMd: '10rem 50rem',
             },
-            // fontFamily: {
-            //     Poppins: '',
-            // },
+            transformOrigin: {
+                yeh: '0 60px',
+            },
+            translate: {
+                x: '50% 50%',
+            },
         },
     },
     plugins: [],

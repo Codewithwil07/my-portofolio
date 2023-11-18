@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-import React from 'react';
-import { BsGithub } from 'react-icons/bs';
-import { BsBoxArrowUpRight } from 'react-icons/bs';
+import {FaLongArrowAltRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Card = ({ children }) => {
@@ -14,7 +12,7 @@ export default Card;
 const Header = ({ img, color }) => {
     return (
         <div
-            className={`p-3 rounded-lg border-[1px] cursor-pointer border-${color}`}
+            className={`rounded-lg cursor-pointer border-${color}`}
             id='wrap-img-card'
         >
             <img src={img} alt='' />
@@ -22,18 +20,27 @@ const Header = ({ img, color }) => {
     );
 };
 
-const Body = ({ title, description, color }) => {
+const Body = ({ description, color, title }) => {
     return (
-        <div className='flex flex-col pt-2'>
-            <div className='flex justify-between item-center'>
-                <h2 className={`text-xl font-bold text-${color}`}>{title}</h2>
-                <Link to={'/Inkultur'} className='flex gap-x-2 items-center'>
-                    <BsBoxArrowUpRight className={`cursor-pointer text-${color}`} />
-                </Link>
-            </div>
-            <p className={`text-sm font-normal text-${color} pb-3`}>
-                {description}
+        <div className='flex flex-col pt-2 gap-y-5'>
+            <p className={`text-lg text-${color} pb-3 md:text-xl`}>
+                <span className='font-semibold'>{title}</span> {description}
             </p>
+            <div className='flex flex-row'>
+                <div className='px-3 py-1 rounded-lg' id='cardBtn'>
+                    <Link to={'/Inkultur'}>
+                        <div className='flex justify-between items-center gap-x-10'>
+                            <p className='text-lg font-bold text-seventh md:text-xl'>
+                                • Live in Production
+                            </p>
+                            <FaLongArrowAltRight className='-rotate-45 text-eight bg-cyan-900'/>
+                        </div>
+                        <p className='text-xl font-bold text-eight md:text-2xl'>
+                            Inkultur.com
+                        </p>
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 };

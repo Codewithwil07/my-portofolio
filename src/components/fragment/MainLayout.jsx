@@ -3,11 +3,13 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import '../../index.css';
+import Bgsvg from '../../constant/Animate/Bgsvg';
 
 const MainLayout = (props) => {
     const { children } = props;
     return (
-        <div className='px-2 overflow-x-hidden font-figtree'>
+        <div className='overflow-x-hidden font-figtree'>
+            <Bgsvg />   
             <Header />
             {children}
             <Footer />

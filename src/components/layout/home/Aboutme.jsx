@@ -4,37 +4,34 @@ import { Link } from 'react-router-dom';
 
 const Aboutme = () => {
     return (
-        <section className='container py-20'>
-            <div className='grid items-center md:grid-cols-2 lg:grid-cols-2'>
+        <section className='pt-20 px-5'>
+            <div className='grid items-center md:grid-cols-aboutMd lg:grid-cols-aboutLg'>
                 <div className='flex flex-col gap-y-5'>
-                    <h1
-                        className='font-extrabold text-3xl md:text-3xl lg:text-4xl'
-                        id='darkModeTheme'
-                    >
+                    <h1 className='font-extrabold text-3xl md:text-4xl lg:text-4xl'>
                         Delivering modern,
                     </h1>
                     <p
-                        className='font-extrabold text-3xl md:text-3xl lg:text-4xl'
+                        className='font-extrabold text-3xl md:text-4xl lg:text-4xl'
                         id='darkModeTheme'
                     >
                         cohesive and intuitive
                     </p>
                     <p
-                        className='font-extrabold text-3xl md:text-3xl lg:text-4xl '
+                        className='font-extrabold text-3xl md:text-4xl lg:text-4xl '
                         id='darkModeTheme'
                     >
                         web solutions.
                     </p>
                     <div className='flex flex-col max-w-xs md:max-w-screen-lg'>
-                        <p className='text-gray-4B00 text-sm pb-5 md:text-base'>
+                        <p className='text-lg pb-5 md:text-xl'>
                             I enjoyed designing meaningful experiences for
                             brands & buissines to help them target users.
                         </p>
-                        <Link className='flex justify-center md:justify-start md:self-start md:ml-16' to={'/about'}>
-                            <Button.Normal
-                                variant='rounded-md'
-                                color={'white'}
-                            >
+                        <Link
+                            className='flex justify-center md:justify-start md:self-start md:ml-16'
+                            to={'/about'}
+                        >
+                            <Button.Normal variant='rounded-lg' color={'white'}>
                                 About me
                             </Button.Normal>
                         </Link>

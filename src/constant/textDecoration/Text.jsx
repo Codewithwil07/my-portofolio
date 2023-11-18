@@ -5,19 +5,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Toles = ({ kalimat, bottom, left }) => {
+const Toles = ({ kalimat, className }) => {
     const kataKata = kalimat.split('');
-
+    const innerAngle = 360 / kataKata.length;
     return (
         <>
             {kataKata.map((kata, index) => (
-                <p key={index} className='absolute text-cyan-600 hidden' id='textAnimation'>
+                <p key={index} className='absolute whitespace-nowrap'>
                     {kata.split('').map((huruf, hurufIndex) => (
                         <span
                             key={hurufIndex}
-                            className={`origin-yeh bottom-[45px] absolute text-[9px] font-semibold `}
+                            className={className}
                             style={{
-                                transform: `rotate(${index * 10}deg)`,
+                                transform: `rotate(${
+                                    index /
+                                    Math.sin(innerAngle / (180 / Math.PI))
+                                }deg)`,
                             }}
                         >
                             {huruf}
@@ -32,8 +35,8 @@ const Toles = ({ kalimat, bottom, left }) => {
 export default Toles;
 
 const Github = () => {
-    return <Toles kalimat='Facebook - facebook -facebook - facebook '  />;
-};  
+    return <Toles kalimat='Facebook - facebook -facebook - facebook ' />;
+};
 
 const Gmail = () => {
     return <Toles kalimat='G-mail - G-mail - G-mail - G-mail' />;
@@ -47,7 +50,23 @@ const Linkedin = () => {
     return <Toles kalimat='Linkedin - Linkedin - Linkedin - Linkedin' />;
 };
 
+const Tools = () => {
+    return (
+        <Toles
+            kalimat='Tool stack - Tool Stack - Tool Stack -'
+            className={
+                'origin-yeh -top-[5px] absolute text-[9px] font-semibold text-white right-[0.2rem]'
+            }
+        />
+    );
+};
+const Project = () => {
+    return <Toles kalimat='Projects - Projects - Projects - Projects' />;
+};
+
 Toles.Github = Github;
-Toles.Gmail = Gmail
+Toles.Gmail = Gmail;
 Toles.Ig = Ig;
 Toles.Linkedin = Linkedin;
+Toles.Tools = Tools;
+Toles.Project = Project;

@@ -8,7 +8,7 @@ import AboutSubheading from '../layout/about/AboutSubheading';
 export default function About() {
     return (
         <MainLayout>
-            <section className='grid grid-rows-aboutSm md:grid-rows-aboutMd xl:grid-rows-aboutLg'>
+            <section className='grid grid-rows-aboutSm md:grid-rows-aboutMd xl:grid-rows-aboutLg' id='bg2'>
                 <AboutDetail />
                 <AboutSubheading />
                 <SkillDetail />

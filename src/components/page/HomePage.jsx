@@ -9,10 +9,12 @@ import Contact from '../layout/home/Contactme';
 export default function Home() {
     return (
         <MainLayout>
-            <Hero />
-            <Aboutme />
-            <Projects />
-            <Contact />
+            <section className='flex flex-col gap-y-5 w-full py-20'>
+                <Hero />
+                <Aboutme />
+                <Projects />
+                <Contact />
+            </section>
         </MainLayout>
     );
 }

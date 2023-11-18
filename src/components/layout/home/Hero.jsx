@@ -1,45 +1,49 @@
-import { image } from '../../../constant/index';
-import Button from '../../element/Button/Button';
-
 export default function Hero() {
     return (
-        <section className='container mx-auto flex flex-col items-center gap-y-4 w-full py-20'>
-            <div className='text-center'>
-                <p className='text-4xl font-[500] text-gray-400 md:text-4xl relative top-2'>
-                    Mern Stack,
-                </p>
-                <h1
-                    className='font-extrabold text-4xl md:text-4xl'
-                    id='darkModeTheme'
-                >
-                    Frontend Developer
-                </h1>
-                <svg
-                    className='relative bottom-8 right-0'
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='300'
-                    height='100'
-                    viewBox='0 0 1267 124'
-                    fill='none'
-                >
-                    <path
-                        d='M7 117C317.036 69.3021 759.72 15.0212 1139.79 6.16285C1140.95 6.13577 1141.18 7.77534 1140.07 8.11441L862.24 92.8758C861.079 93.2302 861.435 94.9594 862.642 94.8263L1260 51'
-                        stroke='#007BFF'
-                        stroke-width='12'
-                        stroke-linecap='square'
-                    />
-                </svg>
+            <div className='flex flex-col gap-y-10 px-5'>
+                <div className="flex flex-col gap-y-32">
+                    <h1 className='font-extrabold text-5xl md:text-6xl lowercase'>
+                        A happy Front-end Developer Who Aims to Help Others Grow
+                        in Web Development
+                    </h1>
+                    <p className='text-3xl  md:text-4xl top-2 w-[90%] lowercase'>
+                        <span className="font-bold">1 Years of experiences</span> in using React.js for a Mern
+                        Stack
+                    </p>
+                </div>
+                <div className='flex flex-col items-start relative bottom-12 self-end gap-y-1 right-36'>
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='30'
+                        height='37'
+                        viewBox='0 0 40 37'
+                        fill='none'
+                        className=' hidden md:block'
+                    >
+                        <g clip-path='url(#clip0_0_64)'>
+                            <path
+                                d='M27.9159 31.4561C20.019 25.1902 13.7895 18.0714 10.0309 8.49448M10.0309 8.49448C12.5436 8.84841 15.2027 8.99613 17.7456 8.92297M10.0309 8.49448C8.84109 12.6174 8.41801 15.817 8.49736 20.0909'
+                                stroke='#0891B2'
+                                stroke-width='3'
+                                stroke-linecap='round'
+                                stroke-linejoin='round'
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id='clip0_0_64'>
+                                <rect
+                                    width='24'
+                                    height='32'
+                                    fill='white'
+                                    transform='matrix(0.428577 -0.903505 -0.903505 -0.428577 28.9121 36.356)'
+                                />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p className='text-sm -rotate-12 relative bottom-7 hidden md:block'>
+                        But i prefer as Front-end anyway😂
+                    </p>
+                </div>
             </div>
-            <p className='text-md md:text-base' id='darkModeTheme'>
-                Specified In
-            </p>
-            <p
-                className='text-md font-semibold md:text-base'
-                id='darkModeTheme'
-            >
-                Website & Webpages
-            </p>
-            <Button.Rounded />
-        </section>
     );
 }

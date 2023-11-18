@@ -7,6 +7,7 @@ import { image } from '../../../constant';
 import '../../../index.css';
 import Text from '../../../constant/textDecoration/Text';
 import { Link } from 'react-router-dom';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 export default function Button({ children }) {
     return <>{children}</>;
@@ -76,43 +77,43 @@ const Ractangle = () => {
         <div className='relative  right-20 md:right-10 xl:left-20'>
             <a
                 href=''
-                className='animate-pulse bg-sky-900 px-2 py-2 rounded-lg mt-10 ml-[24rem] w-20 h-20 flex justify-center lg:w-28 lg:h-28 md:ml-[25rem] lg:ml-[32rem]'
+                className=' bg-sky-900 px-2 py-2 rounded-lg mt-10 ml-[24rem] w-20 h-20 flex justify-center lg:w-28 lg:h-28 md:ml-[25rem] lg:ml-[32rem]'
             >
                 <img src={image.React} alt='' className='w-14 md:w-32' />
             </a>
             <a
                 href=''
-                className='animate-spin bg-black px-2 py-2 rounded-lg -mt-10 ml-[18rem] w-16 h-16 flex justify-center lg:w-20 lg:h-20 md:ml-[19rem] lg:ml-[25rem]'
+                className='bg-black px-2 py-2 rounded-lg -mt-10 ml-[18rem] w-16 h-16 flex justify-center lg:w-20 lg:h-20 md:ml-[19rem] lg:ml-[25rem]'
             >
                 <img src={image.Figma} alt='' className='w-7 md:w-10' />
             </a>
             <a
                 href=''
-                className='animate-pulse bg-sky-200 px-2 py-2 rounded-lg  mt-5 ml-[15rem] w-28 h-28 flex justify-center lg:w-36 lg:h-36 md:ml-[16rem] lg:ml-[20rem]'
+                className=' bg-sky-200 px-2 py-2 rounded-lg  mt-5 ml-[15rem] w-28 h-28 flex justify-center lg:w-36 lg:h-36 md:ml-[16rem] lg:ml-[20rem]'
             >
                 <img src={image.Visual} alt='' className='w-14 md:w-20' />
             </a>
             <a
                 href=''
-                className='animate-bounce bg-purple-900 px-2 py-2 rounded-lg  -mt-28 ml-[24rem]  w-14 h-14 flex justify-center lg::w-20 lg::h-20 md:-mt-28 md:ml-[25rem] lg:ml-[32rem]'
+                className=' bg-purple-900 px-2 py-2 rounded-lg  -mt-28 ml-[24rem]  w-14 h-14 flex justify-center lg::w-20 lg::h-20 md:-mt-28 md:ml-[25rem] lg:ml-[32rem]'
             >
                 <img src={image.Tailwind} alt='' className='w-7 md:w-10' />
             </a>
             <div
                 href=''
-                className='animate-spin bg-yellow-500 px-2 py-2 rounded-lg -mt-14 ml-[28.5rem]  w-20 h-20 flex justify-center lg::w-24 lg::h-24 lg:ml-[39rem] md:-mt-20 md:ml-[32rem] lg:-mt-20'
+                className='bg-yellow-500 px-2 py-2 rounded-lg -mt-14 ml-[28.5rem]  w-20 h-20 flex justify-center lg::w-24 lg::h-24 lg:ml-[39rem] md:-mt-20 md:ml-[32rem] lg:-mt-20'
             >
                 <img src={image.Html} alt='' className='w-10 md:w-10' />
             </div>
             <a
                 href=''
-                className='animate-bounce bg-green-900 px-2 py-2 rounded-lg  mt-10 ml-[21rem] w-14 h-14 flex justify-center lg:w-20 lg:h-20 md:ml-[22rem] lg:ml-[26rem] md:mt-16 lg:mt-16'
+                className=' bg-green-900 px-2 py-2 rounded-lg  mt-10 ml-[21rem] w-14 h-14 flex justify-center lg:w-20 lg:h-20 md:ml-[22rem] lg:ml-[26rem] md:mt-16 lg:mt-16'
             >
                 <img src={image.Mongodb} alt='' className='w-10 md:w-16' />
             </a>
             <a
                 href=''
-                className='animate-bounce bg-purple-300 px-2 py-2 rounded-lg  -mt-20 ml-[26rem] w-16 h-16 flex justify-center lg:w-24 lg:h-24 md:ml-[28rem] md:-mt-18 lg:ml-[35rem] lg:-mt-24'
+                className=' bg-purple-300 px-2 py-2 rounded-lg  -mt-20 ml-[26rem] w-16 h-16 flex justify-center lg:w-24 lg:h-24 md:ml-[28rem] md:-mt-18 lg:ml-[35rem] lg:-mt-24'
             >
                 <img src={image.Bootstrap} alt='' className='w-10' />
             </a>
@@ -123,7 +124,7 @@ const Ractangle = () => {
 const Normal = ({ children, variant, color, position }) => {
     return (
         <button
-            className={`bg-blue-600 py-2 px-12 text-xl self-${position} font-bold shadow-md text-${color} cursor-pointer ${variant} border-1 border-blue-600`}
+            className={`bg-blue-600 py-2 px-12 text-xl font-bold shadow-md text-${color} cursor-pointer ${variant} border-1 border-blue-600`}
         >
             {children}
         </button>
@@ -134,7 +135,9 @@ const RoundedV2 = ({ size }) => {
     return (
         <div className='flex justify-center gap-x-10 pt-5'>
             <div className='flex flex-col gap-y-3'>
-                <div className={`rounded-full bg-primary  ${size}`} />
+                <div className='flex justify-center'>
+                    <div className={`rounded-full bg-primary  ${size}`} />
+                </div>
                 <div className={`rounded-full bg-secondary ${size}`} />
                 <div className={`rounded-full bg-third ${size}`} />
             </div>
@@ -150,22 +153,22 @@ const RoundedV2 = ({ size }) => {
 const RoundedV3 = () => {
     return (
         <div className='flex gap-x-3 items-end pt-10'>
-            <div className='w-9 md:w-12 h-10 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-gray-200'>
+            <div className='w-8 md:w-12 h-10 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'>
                 S
             </div>
-            <div className='w-9 md:w-12 h-28 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-gray-200'>
+            <div className='w-8 md:w-12 h-28 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'>
                 K
             </div>
-            <div className='w-9 md:w-12 h-36 rounded-full bg-fourth flex justify-center p-1 font-bold text-xl text-gray-700'>
+            <div className='w-8 md:w-12 h-36 rounded-full bg-fourth flex justify-center p-1 font-bold text-xl text-white'>
                 I
             </div>
-            <div className='w-9 md:w-12 h-20 rounded-full bg-third flex justify-center p-1 font-bold text-xl text-gray-200'>
+            <div className='w-8 md:w-12 h-20 rounded-full bg-third flex justify-center p-1 font-bold text-xl text-white'>
                 L
             </div>
-            <div className='w-9 md:w-12 h-44 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-gray-200'>
+            <div className='w-8 md:w-12 h-44 rounded-full bg-secondary flex justify-center p-1 font-bold text-xl text-white'>
                 L
             </div>
-            <div className='w-9 md:w-12 h-40 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-gray-200'>
+            <div className='w-8 md:w-12 h-40 rounded-full bg-primary flex justify-center p-1 font-bold text-xl text-white'>
                 S
             </div>
         </div>
