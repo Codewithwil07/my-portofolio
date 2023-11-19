@@ -1,12 +1,14 @@
+import { image } from '../../../constant';
+
 export default function Hero() {
     return (
         <div className='flex flex-col gap-y-10 px-5'>
-            <div className='flex flex-col gap-y-32'>
-                <h1 className='font-extrabold text-5xl md:text-4xl lowercase'>
-                    A happy Front-end Developer Who Aims to Help Others Grow in
-                    Web Development
+            <div className='flex flex-col gap-y-24'>
+                <h1 className='font-extrabold text-5xl md:text-4xl lowercase relative'>
+                    <img src={image.MiniWave} alt='image' className='w-40 absolute top-[18.2rem] md:top-[5.3rem] xl:top-12'/>A happy Front-end Developer Who Aims to
+                    Help Others Grow in Web Development
                 </h1>
-                <p className='text-3xl  md:text-2xl top-2 w-[80%] lowercase'>
+                <p className='text-xl md:text-2xl top-2 w-[80%] lowercase'>
                     <span className='font-bold'>1 Years of experiences</span> in
                     using React.js and as a mern stack developer, and now trying
                     to use next.js
