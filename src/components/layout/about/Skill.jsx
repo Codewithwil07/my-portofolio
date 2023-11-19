@@ -5,29 +5,39 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Skill = () => {
-    const control = useAnimation();
-    const [item, inView] = useInView();
+    const [item, inView] = useInView({
+        triggerOnce: true,
+    });
 
-    React.useEffect(() => {
-        if (inView) {
-            control.start({
-                y: 0,
-                opacity: 1,
-                transition: {
-                    duration: 0.2,
-                },
-            });
-        }
-    }, [control, inView]);
+    const ContainerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.3,
+            },
+        },
+    };
 
-    const init = {
-        y: 100,
-        opacity: 0,
+    const ChildrenVariants = {
+        hidden: {
+            y: 100,
+            opacity: 0,
+        },
+        visible: {
+            y: 0,
+            opacity: 100,
+        },
     };
 
     return (
-        <>
-            <motion.div ref={item} animate={control} initial={init}>
+        <motion.div
+            className='grid grid-cols-2 gap-x-10 gap-y-5 py-16 md:grid-cols-3 xl:grid-cols-4'
+            variants={ContainerVariants}
+            ref={item}
+            initial='hidden'
+            animate={inView ? 'visible' : 'hidden'}
+        >
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.Html} className=' w-10 pb-1' alt='Image-Icon' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -41,7 +51,7 @@ const Skill = () => {
                     for documents designed to be displayed in internet browsers
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.CSS} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -56,7 +66,7 @@ const Skill = () => {
                     structured and uniform
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.Js} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -69,7 +79,7 @@ const Skill = () => {
                     Javascript is a high-level end dynamic programming language
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img
                     src={image.Tailwind}
                     alt='Image-Icon'
@@ -88,7 +98,7 @@ const Skill = () => {
                     to build any design, directly in your markup
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.Typ} alt='Image-Icon' className='w-10 pb-2' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -102,7 +112,7 @@ const Skill = () => {
                     build on Javascript, giving you better tooling at any scale
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.SCSS} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -116,7 +126,7 @@ const Skill = () => {
                     grade CSS extension language in the world
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.React} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -130,7 +140,7 @@ const Skill = () => {
                     interactive user interfaces
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img src={image.Node} alt='Image-Icon' className='w-10 pb-1' />
                 <p className='text-gray-400 text-sm md:text-base'>
                     <span
@@ -144,7 +154,7 @@ const Skill = () => {
                     open-source and cross platform
                 </p>
             </motion.div>
-            <motion.div ref={item} animate={control} initial={init}>
+            <motion.div variants={ChildrenVariants}>
                 <img
                     src={image.Nextjs}
                     alt='Image-Icon'
@@ -163,7 +173,7 @@ const Skill = () => {
                     modern, server-render React applications with ease
                 </p>
             </motion.div>
-        </>
+        </motion.div>
     );
 };
 
