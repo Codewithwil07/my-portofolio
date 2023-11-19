@@ -3,11 +3,16 @@ import { image } from '../../../constant';
 export default function Hero() {
     return (
         <div className='flex flex-col gap-y-10 px-5'>
-            <div className='flex flex-col gap-y-24'>
+            <div className='flex flex-col gap-y-14'>
                 <h1 className='font-extrabold text-5xl md:text-4xl lowercase relative'>
-                    <img src={image.MiniWave} alt='image' className='w-40 absolute top-[15rem] md:top-[5.3rem] xl:top-12'/>A happy Front-end Developer Who Aims to
-                    Help Others Grow in Web Development
+                    A happy Front-end Developer Who Aims to Help Others Grow in
+                    Web Development
                 </h1>
+                <img
+                    src={image.MiniWave}
+                    alt='image'
+                    className='w-40 relative bottom-12'
+                />
                 <p className='text-xl md:text-2xl top-2 w-[80%] lowercase'>
                     <span className='font-bold'>1 Years of experiences</span> in
                     using React.js and as a mern stack developer, and now trying
