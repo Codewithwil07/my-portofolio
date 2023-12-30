@@ -15,7 +15,7 @@ export default function Hero() {
                 />
                 <p className='text-xl md:text-2xl top-2 w-[80%] lowercase'>
                     <span className='font-bold'>1 Years of experiences</span> in
-                    using React.js and as a mern stack developer, and now trying
+                    using React.js and now trying
                     to use next.js
                 </p>
             </div>
