@@ -26,7 +26,7 @@ export default function Navbar() {
             <div
                 className={`${
                     isMenuOpen ? 'block' : 'hidden'
-                } flex flex-col items-start pt-28 gap-x-10 px-2 py-2 backdrop-blur-2xl h-screen text-2xl z-[5] gap-y-3 absolute left-0 top-0 w-full text-gray-400 rounded-md md:text-base lg:static lg:h-auto lg:flex lg:items-center lg:pt-0 lg:text-black`}
+                } flex flex-col items-start font-semibold pt-28 gap-x-10 px-2 py-2 backdrop-blur-2xl h-screen text-2xl z-[5] gap-y-3 absolute left-0 top-0 w-full text-gray-400 rounded-md md:text-base lg:static lg:h-auto lg:flex lg:items-center lg:pt-0 lg:text-black`}
             >
                 <div
                     className='flex flex-col gap-y-10 lg:flex md:text-base lg:flex-row lg:gap-x-10 lg:text-md'
